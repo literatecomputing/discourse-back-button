@@ -1,0 +1,5 @@
+en:
+  theme_metadata:
+    description: Add a back button at the top of the page
+    settings:
+      example_setting: A description of a setting.
