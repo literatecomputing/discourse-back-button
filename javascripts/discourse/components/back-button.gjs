@@ -7,15 +7,4 @@ export default class BackButtonComponent extends Component {
   goBack() {
     window.history.back();
   }
-
-  <template>
-    <div class="back-button-container">
-      <DButton
-        class="icon btn-flat plugin-outlets-header-icon"
-        @icon="arrow-left"
-        @title="this thing"
-        @action={{this.goBack}}
-      />
-    </div>
-  </template>
 }
