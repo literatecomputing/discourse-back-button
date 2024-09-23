@@ -1,2 +1,3 @@
-example_setting:
+hide_back_button_on_home_page:
   default: true
+  description: "Hide the back button on the home page"
