@@ -1,8 +1,8 @@
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
+import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import { defaultHomepage } from "discourse/lib/utilities";
-import { service } from "@ember/service";
 
 export default class BackButtonComponent extends Component {
   @service router;
