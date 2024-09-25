@@ -25,7 +25,7 @@ export default class BackButtonComponent extends Component {
 
   <template>
     {{#if this.displayBackButton}}
-      <div class="back-button-container fixed-header">
+      <div class="back-button-container fixed-top-header fixed-header">
         <DButton
           class="icon btn-flat plugin-outlets-header-icon"
           @icon="arrow-left"
