@@ -1,6 +1,6 @@
 import { apiInitializer } from "discourse/lib/api";
-import BackButton from "../components/back-button";
+import BackButton from "../components/back-button.gjs";
 
-export default apiInitializer("1.8.0", (api) => {
+export default apiInitializer((api) => {
   api.renderInOutlet("above-site-header", BackButton);
 });
