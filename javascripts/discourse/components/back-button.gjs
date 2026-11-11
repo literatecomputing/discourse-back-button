@@ -1,8 +1,8 @@
 import Component from "@glimmer/component";
 import { action } from "@ember/object";
 import { service } from "@ember/service";
-import DButton from "discourse/components/d-button";
 import { defaultHomepage } from "discourse/lib/utilities";
+import DButton from "discourse/ui-kit/d-button";
 
 export default class BackButtonComponent extends Component {
   @service router;
@@ -28,9 +28,9 @@ export default class BackButtonComponent extends Component {
       <div class="back-button-container fixed-top-header fixed-header">
         <DButton
           class="icon btn-flat plugin-outlets-header-icon"
+          @action={{this.goBack}}
           @icon="arrow-left"
           @title="this thing"
-          @action={{this.goBack}}
         />
       </div>
     {{/if}}
